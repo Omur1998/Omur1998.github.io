@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md. Omur Faruk | NOC Engineer & CSE Graduate</title>
+<meta name="description" content="Portfolio of Md. Omur Faruk: CSE graduate (Data Science & Computer Networking), NOC Engineer intern at Duronto Internet, building AI/ML, NLP and IoT projects.">
+<style>
+  :root{
+    --bg:#0b1020; --bg2:#111832; --card:#151d3b; --text:#e8ecf8; --muted:#9aa6c7;
+    --accent:#4f8cff; --accent2:#22d3a6; --border:#243056;
+  }
+  :root[data-theme="light"]{
+    --bg:#f6f8fd; --bg2:#ffffff; --card:#ffffff; --text:#101a33; --muted:#57648a;
+    --accent:#2457d6; --accent2:#0e9f7e; --border:#dbe2f2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{font-weight:800;letter-spacing:.3px;color:var(--text)}
+  .logo span{color:var(--accent)}
+  .links{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+  .links a{color:var(--muted);font-size:.93rem}
+  .links a:hover{color:var(--text);text-decoration:none}
+  .theme{background:none;border:1px solid var(--border);color:var(--text);border-radius:8px;padding:6px 10px;cursor:pointer;font-size:.9rem}
+  .hero{padding:84px 0 64px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+  .badge{display:inline-block;border:1px solid var(--border);background:var(--bg2);color:var(--accent2);padding:5px 12px;border-radius:999px;font-size:.82rem;margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5vw,3.4rem);line-height:1.12;margin-bottom:14px}
+  h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);font-size:1.08rem;max-width:560px;margin-bottom:26px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{padding:11px 20px;border-radius:10px;font-weight:600;border:1px solid var(--accent);background:var(--accent);color:#fff}
+  .btn:hover{text-decoration:none;filter:brightness(1.1)}
+  .btn.ghost{background:transparent;color:var(--text);border-color:var(--border)}
+  .avatar{justify-self:center;width:230px;height:230px;border-radius:50%;border:3px solid var(--accent);overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:4rem;font-weight:800}
+  .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+  section{padding:64px 0;border-top:1px solid var(--border)}
+  h2{font-size:1.7rem;margin-bottom:8px}
+  .sub{color:var(--muted);margin-bottom:28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px}
+  .card h3{font-size:1.1rem;margin-bottom:6px}
+  .card p,.card li{color:var(--muted);font-size:.96rem}
+  .card ul{padding-left:18px;margin-top:8px}
+  .card li{margin-bottom:5px}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+  .tag{font-size:.78rem;border:1px solid var(--border);background:var(--bg2);color:var(--muted);padding:3px 10px;border-radius:999px}
+  .timeline{border-left:2px solid var(--border);padding-left:22px;display:grid;gap:22px}
+  .item{position:relative}
+  .item::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+  .item .when{color:var(--accent2);font-size:.85rem;font-weight:600}
+  .item h3{font-size:1.1rem}
+  .item .org{color:var(--muted);margin-bottom:6px}
+  .item ul{padding-left:18px;color:var(--muted);font-size:.96rem}
+  .item li{margin-bottom:4px}
+  .pub{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+  .status{white-space:nowrap;font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid var(--accent2);color:var(--accent2)}
+  .status.review{border-color:var(--accent);color:var(--accent)}
+  .contact-box{text-align:center}
+  .contact-box p{color:var(--muted);max-width:520px;margin:0 auto 22px}
+  footer{text-align:center;color:var(--muted);font-size:.86rem;padding:28px 0;border-top:1px solid var(--border)}
+  @media(max-width:760px){
+    .hero{grid-template-columns:1fr;padding-top:48px;text-align:left}
+    .avatar{width:170px;height:170px;font-size:3rem;order:-1;justify-self:start}
+    .links a.hide-m{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">Omur<span>.</span>dev</a>
+      <div class="links">
+        <a class="hide-m" href="#about">About</a>
+        <a class="hide-m" href="#experience">Experience</a>
+        <a class="hide-m" href="#projects">Projects</a>
+        <a class="hide-m" href="#research">Research</a>
+        <a href="#contact">Contact</a>
+        <button class="theme" id="themeBtn" aria-label="Toggle light or dark theme">Theme</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="badge">NOC Engineer Intern @ Duronto Internet</span>
+        <h1>Hi, I'm <span class="grad">Md. Omur Faruk</span></h1>
+        <p class="lead">CSE graduate from ULAB with a focus on Computer Networking and Data Science. I keep networks running at an ISP by day, and build AI/ML, NLP and IoT projects the rest of the time.</p>
+        <div class="btns">
+          <a class="btn" href="#projects">View my projects</a>
+          <a class="btn ghost" href="https://github.com/Omur1998" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" href="Omur-Faruk-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        </div>
+      </div>
+      <!-- Put your photo in this folder as photo.jpg. If it is missing, the initials show instead. -->
+      <div class="avatar" id="avatar">
+        <img src="photo.jpg" alt="Md. Omur Faruk" onerror="this.remove();document.getElementById('avatar').textContent='OF'">
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>About me</h2>
+      <p class="sub">Where networking meets AI.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Who I am</h3>
+          <p>I completed my BSc in Computer Science and Engineering at the University of Liberal Arts Bangladesh (2022 to 2026), with majors in Data Science and Computer Networking. I enjoy analytical problem-solving, research, and turning ideas into working systems.</p>
+        </div>
+        <div class="card">
+          <h3>What I'm doing now</h3>
+          <p>Working as a NOC Engineer intern at Duronto Internet, an internet service provider, where I get hands-on exposure to real network operations and monitoring.</p>
+        </div>
+        <div class="card">
+          <h3>What I'm looking for</h3>
+          <p>An entry-level role where I can grow in networking, data and AI, contribute to team goals, and keep learning every day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <p class="sub">Tools and strengths I work with.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Technical</h3>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">WordPress</span><span class="tag">Microsoft Excel</span><span class="tag">Adobe Photoshop</span><span class="tag">Adobe Illustrator</span><span class="tag">Canva</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>AI, Data & IoT</h3>
+          <div class="tags">
+            <span class="tag">NLP</span><span class="tag">RAG</span><span class="tag">FAISS</span><span class="tag">BM25</span><span class="tag">OCR</span><span class="tag">QLoRA fine-tuning</span><span class="tag">Ollama</span><span class="tag">ESP32</span><span class="tag">Sensors & automation</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Soft skills</h3>
+          <div class="tags">
+            <span class="tag">Critical thinking</span><span class="tag">Data analysis & visualization</span><span class="tag">Technical writing</span><span class="tag">Public speaking</span><span class="tag">Project management</span><span class="tag">Time management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="sub">Where I've worked and researched.</p>
+      <div class="timeline">
+        <div class="item">
+          <div class="when">Present</div>
+          <h3>NOC Engineer (Intern)</h3>
+          <div class="org">Duronto Internet</div>
+          <ul>
+            <li>Working in the Network Operations Center of an internet service provider.</li>
+            <li>Learning day-to-day network monitoring, troubleshooting and support in a live environment.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="when">Research</div>
+          <h3>Student Researcher</h3>
+          <div class="org">Tiny Neurons Research Group</div>
+          <ul>
+            <li>Worked on IoT, automation, smart systems and applied computing projects.</li>
+            <li>Cattle heat and temperature monitoring using technology-based approaches.</li>
+            <li>Smart Door System with punch-based attendance, automatic user records and voice-command responses.</li>
+            <li>Literature reviews, data collection, technical analysis, testing and documentation with the team.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="when">2022 – 2026</div>
+          <h3>BSc in Computer Science and Engineering</h3>
+          <div class="org">University of Liberal Arts Bangladesh (ULAB)</div>
+          <ul><li>Majors: Data Science, Computer Networking.</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="sub">Things I've built.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Bengali AI Chatbot for NCTB Textbooks</h3>
+          <p>Capstone project (CSE 4098) answering questions from Class 8 Science and BGS textbooks.</p>
+          <ul>
+            <li>Hybrid retrieval with FAISS, BM25 and RRF for textbook-grounded answers.</li>
+            <li>Scanned-textbook pipeline with Tesseract OCR and DocLayout-YOLO for text, diagrams and tables.</li>
+            <li>Fine-tuned Gemma 3 4B-IT with QLoRA and deployed it locally with Ollama.</li>
+            <li>Multi-stage prompt pipeline for query classification, intent detection, expansion and response.</li>
+          </ul>
+          <div class="tags"><span class="tag">RAG</span><span class="tag">NLP</span><span class="tag">OCR</span><span class="tag">LLM</span></div>
+        </div>
+        <div class="card">
+          <h3>Justice Link BD</h3>
+          <p>A digital e-governance and AI-based public safety platform connecting citizens and law enforcement.</p>
+          <ul>
+            <li>AI fake-report filtering using CNN-based sentiment analysis.</li>
+            <li>Anonymous, encrypted reporting for secure submissions.</li>
+            <li>Emergency SOS module with geo-fencing alerts within a 500-meter radius.</li>
+          </ul>
+          <div class="tags"><span class="tag">E-governance</span><span class="tag">CNN</span><span class="tag">Security</span></div>
+        </div>
+        <div class="card">
+          <h3>Smart Greenhouse Monitoring & Control</h3>
+          <p>An IoT system that monitors and controls a greenhouse environment.</p>
+          <ul>
+            <li>DHT22, soil moisture and LDR sensors for data collection.</li>
+            <li>ESP32 and relay modules controlling pumps, fans, lighting and humidification.</li>
+            <li>Automated control based on environmental conditions.</li>
+          </ul>
+          <div class="tags"><span class="tag">ESP32</span><span class="tag">IoT</span><span class="tag">Automation</span></div>
+        </div>
+        <div class="card">
+          <h3>Smart Door System</h3>
+          <p>Built with Tiny Neurons Research Group.</p>
+          <ul>
+            <li>Punch-based attendance with automatic storage of user information.</li>
+            <li>Voice-command feature giving automated spoken responses after attendance.</li>
+          </ul>
+          <div class="tags"><span class="tag">IoT</span><span class="tag">Smart systems</span><span class="tag">Voice</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="wrap">
+      <h2>Research publications</h2>
+      <p class="sub">Work in AI and personalization.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="pub">
+            <h3>AdaLLM: A Subject-Adaptive RAG Framework for Question Answering on NCTB Class-8 Science & BGS</h3>
+            <span class="status">Accepted</span>
+          </div>
+          <p>A subject-adaptive RAG framework for curriculum-aligned question answering over NCTB Grade-8 content.</p>
+        </div>
+        <div class="card">
+          <div class="pub">
+            <h3>Reinforcement Learning-Based Per-Company Weight Personalization for Intelligent Talent Matching</h3>
+            <span class="status review">Under review</span>
+          </div>
+          <p>RL-driven personalization of matching weights per company to improve candidate–job fit in AI talent matching.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-box">
+      <h2>Let's connect</h2>
+      <p>I'm open to entry-level opportunities in networking, data and AI. Send me a message, or have a look at my code on GitHub.</p>
+      <div class="btns" style="justify-content:center">
+        <a class="btn" href="mailto:omurfaruk199823@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://github.com/Omur1998" target="_blank" rel="noopener">github.com/Omur1998</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>&copy; <span id="yr"></span> Md. Omur Faruk. All rights reserved.</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var root = document.documentElement, btn = document.getElementById('themeBtn');
+  try { var saved = localStorage.getItem('theme'); if (saved) root.setAttribute('data-theme', saved); } catch(e){}
+  btn.addEventListener('click', function(){
+    var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch(e){}
+  });
+</script>
+</body>
+</html>
